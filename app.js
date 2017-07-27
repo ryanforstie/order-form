@@ -15,9 +15,7 @@ function Form(product, productQuantity, userName, userStreet, userCity, userStat
   this.userCreditCard = userCreditCard;
 };
 
-
 Form.all = [];
-
 
 function handleFormSubmit(e) {
 
@@ -44,9 +42,9 @@ function displayUserInput() {
   for (var i = 0; i < inputArray.length; i++) {
     var liEl = document.createElement('li');
     liEl.textContent = inputArray[i];
-    (userInputList).appendChild(liEl)
+    (userInputList).appendChild(liEl);
   }
-}
+};
 
 var formSubmit = document.getElementById('store-form');
 
