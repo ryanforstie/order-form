@@ -1,6 +1,6 @@
 'use strict';
 
-var userInputList = document.getElementById('cart');
+
 
 function Form(product, productQuantity, userName, userStreet, userCity, userState, userZip, userPhoneNumber, userCreditCard) {
   this.product = product;
@@ -36,22 +36,7 @@ function handleFormSubmit(e) {
   displayUserInput();
 }
 
-function displayUserInput() {
-
-  var inputArray = [product, productQuantity, userName, userStreet, userCity, userState, userZip, userPhoneNumber, userCreditCard];
-  for (var i = 0; i < inputArray.length; i++) {
-    var liEl = document.createElement('li');
-    liEl.textContent = inputArray[i];
-    (userInputList).appendChild(liEl);
-  }
-};
 
 var formSubmit = document.getElementById('store-form');
 
 formSubmit.addEventListener('submit', handleFormSubmit);
-
-if (localStorage.storedUserInput) {
-  Form.all = JSON.parse(localStorage.storedUserInput);
-} else {
-  console.log('FUCK MY LIFE');
-}
