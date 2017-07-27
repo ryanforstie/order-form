@@ -15,7 +15,11 @@ function Form(product, productQuantity, userName, userStreet, userCity, userStat
   this.userCreditCard = userCreditCard;
 };
 
-var Form.all = [];
+
+Form.all = [];
+=======
+
+
 
 function handleFormSubmit(e) {
 
