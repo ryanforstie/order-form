@@ -1,6 +1,6 @@
 'use strict';
 
-var userInputList = document.getElementByClass('cart');
+var userInputList = document.getElementById('cart');
 
 function Form(product, productQuantity, userName, userStreet, userCity, userState, userZip, userPhoneNumber, userCreditCard) {
   this.product = product;
