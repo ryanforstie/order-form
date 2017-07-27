@@ -17,8 +17,6 @@ function Form(product, productQuantity, userName, userStreet, userCity, userStat
 
 
 Form.all = [];
-=======
-
 
 
 function handleFormSubmit(e) {
