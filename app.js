@@ -44,7 +44,7 @@ function displayUserInput() {
   for (var i = 0; i < inputArray.length; i++) {
     var liEl = document.createElement('li');
     liEl.textContent = inputArray[i];
-    (userInputList).appendChild(liEl)
+    (userInputList).appendChild(liEl);
   }
 }
 
