@@ -13,8 +13,6 @@ function Form(product, productQuantity, userName, userStreet, userCity, userStat
   this.userCreditCard = userCreditCard;
 };
 
-// Form.all = [];
-
 var nameGoesHere = JSON.parse(localStorage.storedUserInput);
 
 function displayUserInput() {
@@ -30,19 +28,12 @@ document.getElementById('creditcard').innerHTML = nameGoesHere[0].userCreditCard
 var imageContainer = document.getElementById('image');
 imageContainer.src = nameGoesHere[0].source;
 
-  // var inputArray = ['product', 'productQuantity', 'userName', 'userStreet', 'userCity', 'userState', 'userZip', 'userPhoneNumber', 'userCreditCard'];
-  // for (var i = 0; i < inputArray.length; i++) {
-    // var liEl = document.createElement('li');
-    // liEl.textContent = nameGoesHere[0].product;
-    // (userInputList).appendChild(liEl);
-  }
-// };
+function clearLocalStorage() {
+  localStorage.clear();
+}
 
 displayUserInput();
 
-// if (localStorage.storedUserInput) {
-//   Form.all = JSON.parse(localStorage.storedUserInput);
-//   displayUserInput();
-// } else {
-//   console.log('FUCK MY LIFE');
-// }
+var formSubmit = document.getElementById('store-form');
+
+formSubmit.addEventListener('submit', clearLocalStorage);
