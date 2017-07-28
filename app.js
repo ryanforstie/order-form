@@ -34,7 +34,7 @@ function handleFormSubmit(e) {
   Form.all.push(submitUserForm);
   localStorage.storedUserInput = JSON.stringify(Form.all);
   displayUserInput();
-}
+};
 
 
 var formSubmit = document.getElementById('store-form');

@@ -27,7 +27,7 @@ document.getElementById('phonenumber').innerHTML = nameGoesHere[0].userPhoneNumb
 document.getElementById('creditcard').innerHTML = nameGoesHere[0].userCreditCard;
 var imageContainer = document.getElementById('image');
 imageContainer.src = nameGoesHere[0].source;
-
+}
 function clearLocalStorage() {
   localStorage.clear();
 }
