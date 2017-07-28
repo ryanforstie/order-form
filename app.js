@@ -4,7 +4,7 @@
 
 function Form(product, productQuantity, userName, userStreet, userCity, userState, userZip, userPhoneNumber, userCreditCard) {
   this.product = product;
-  this.source = './img/' + this.product + '.jpg';
+  this.source = this.product + '.jpg';
   this.productQuantity = productQuantity;
   this.userName = userName;
   this.userStreet = userStreet;
